@@ -3,56 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Đơn Giản</title>
+    <title>TechOn - Giải pháp công nghệ cho bán hàng hiện đại</title>
+    <meta name="description" content="TechOn cung cấp giải pháp công nghệ toàn diện cho bán hàng, quản lý đơn hàng và quản lý sản phẩm giúp doanh nghiệp vận hành hiệu quả hơn.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <header class="main-header">
-        <div class="container">
-            <a href="#" class="logo">MyProduct</a>
-            <nav class="main-nav">
+        <div class="container nav-wrap">
+            <a href="#" class="logo" aria-label="TechOn Home">
+                <span class="logo-mark">T</span>
+                <span class="logo-text">TechOn</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Điều hướng chính">
                 <ul>
-                    <li><a href="#features">Tính năng</a></li>
+                    <li><a href="#about">Giới thiệu</a></li>
+                    <li><a href="#solutions">Giải pháp</a></li>
+                    <li><a href="#benefits">Lợi ích</a></li>
                     <li><a href="#contact">Liên hệ</a></li>
                 </ul>
             </nav>
+
+            <a href="http://techon.com.vn/" target="_blank" class="btn btn-outline">Dùng thử demo</a>
         </div>
     </header>
 
     <main>
         <section id="hero">
-            <div class="container">
-                <h1>Chào mừng đến với Sản phẩm của chúng tôi</h1>
-                <p>Giải pháp hoàn hảo để giải quyết vấn đề của bạn một cách hiệu quả và nhanh chóng.</p>
-                <button id="cta-button" class="cta-button">Bắt đầu ngay</button>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="eyebrow">CÔNG TY CỔ PHẦN CÔNG NGHỆ TECHON</p>
+                    <h1>Tăng tốc bán hàng với nền tảng quản lý thông minh</h1>
+                    <p>
+                        TechOn mang đến hệ sinh thái công nghệ giúp doanh nghiệp tối ưu toàn bộ quy trình
+                        từ bán hàng, theo dõi đơn hàng đến quản trị sản phẩm trên một nền tảng duy nhất.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">Đăng ký tư vấn</a>
+                        <a href="#solutions" class="btn btn-ghost">Khám phá giải pháp</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div>
+                            <strong>24/7</strong>
+                            <span>Hỗ trợ vận hành</span>
+                        </div>
+                        <div>
+                            <strong>01 nền tảng</strong>
+                            <span>Quản lý tập trung</span>
+                        </div>
+                        <div>
+                            <strong>Bảo mật cao</strong>
+                            <span>An toàn dữ liệu</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-card" aria-label="Bảng điều khiển minh họa">
+                    <h3>Bảng điều khiển TechOn</h3>
+                    <ul>
+                        <li><span>Đơn hàng mới</span><strong>128</strong></li>
+                        <li><span>Tỷ lệ xử lý đúng hạn</span><strong>98%</strong></li>
+                        <li><span>Sản phẩm đang bán</span><strong>1,245</strong></li>
+                        <li><span>Doanh thu hôm nay</span><strong>₫ 256M</strong></li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <section id="features">
+        <section id="about" class="section">
+            <div class="container about">
+                <h2>Về TechOn</h2>
+                <p>
+                    TechOn là công ty cổ phần công nghệ tập trung phát triển các giải pháp giúp doanh nghiệp
+                    bán hàng nhanh hơn, quản lý vận hành hiệu quả hơn và mở rộng kinh doanh bền vững.
+                    Với tư duy sản phẩm linh hoạt, chúng tôi đồng hành cùng doanh nghiệp trong chuyển đổi số.
+                </p>
+            </div>
+        </section>
+
+        <section id="solutions" class="section section-soft">
             <div class="container">
-                <h2>Các tính năng nổi bật</h2>
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <h3>Nhanh chóng</h3>
-                        <p>Tốc độ xử lý vượt trội, tiết kiệm thời gian cho bạn.</p>
-                    </div>
-                    <div class="feature-item">
-                        <h3>Bảo mật</h3>
-                        <p>Dữ liệu của bạn được bảo vệ với các tiêu chuẩn cao nhất.</p>
-                    </div>
-                    <div class="feature-item">
-                        <h3>Dễ sử dụng</h3>
-                        <p>Giao diện thân thiện, không cần hướng dẫn phức tạp.</p>
-                    </div>
+                <h2>Giải pháp cốt lõi</h2>
+                <div class="cards-grid">
+                    <article class="card">
+                        <h3>Giải pháp bán hàng</h3>
+                        <p>Tập trung dữ liệu khách hàng, quản lý kênh bán và theo dõi hiệu suất theo thời gian thực.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Quản lý đơn hàng</h3>
+                        <p>Tự động hóa luồng xử lý đơn, cập nhật trạng thái chính xác và giảm thiểu sai sót vận hành.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Quản lý sản phẩm</h3>
+                        <p>Chuẩn hóa danh mục, kiểm soát tồn kho và đồng bộ thông tin sản phẩm trên nhiều kênh.</p>
+                    </article>
                 </div>
+            </div>
+        </section>
+
+        <section id="benefits" class="section">
+            <div class="container">
+                <h2>Tại sao chọn TechOn?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-item">Triển khai nhanh, dễ tích hợp với hệ thống hiện có</div>
+                    <div class="benefit-item">Giao diện trực quan, phù hợp nhiều mô hình kinh doanh</div>
+                    <div class="benefit-item">Báo cáo minh bạch giúp ra quyết định chính xác</div>
+                    <div class="benefit-item">Đội ngũ chuyên gia công nghệ đồng hành dài hạn</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section cta-section">
+            <div class="container cta-wrap">
+                <h2>Sẵn sàng chuyển đổi vận hành cùng TechOn?</h2>
+                <p>Để lại thông tin để nhận tư vấn giải pháp phù hợp với mô hình kinh doanh của bạn.</p>
+                <button id="cta-button" class="btn btn-primary">Nhận tư vấn ngay</button>
             </div>
         </section>
     </main>
 
-    <footer id="contact" class="main-footer">
-        <div class="container">
-            <p>&copy; 2026 MyProduct. All rights reserved.</p>
+    <footer class="main-footer">
+        <div class="container footer-wrap">
+            <p>© 2026 Công ty Cổ phần Công nghệ TechOn. All rights reserved.</p>
+            <a href="#hero">Lên đầu trang ↑</a>
         </div>
     </footer>
 
