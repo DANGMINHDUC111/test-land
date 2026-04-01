@@ -1,134 +1,191 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechOn - Giải pháp công nghệ cho bán hàng hiện đại</title>
-    <meta name="description" content="TechOn cung cấp giải pháp công nghệ toàn diện cho bán hàng, quản lý đơn hàng và quản lý sản phẩm giúp doanh nghiệp vận hành hiệu quả hơn.">
+    <title>Techon - CRM & AI Tương Lai</title>
+    <!-- Nhúng Google Fonts "Inter" mang phong cách hiện đại chuẩn quốc tế -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Nhúng style.css tách rời -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header class="main-header">
-        <div class="container nav-wrap">
-            <a href="#" class="logo" aria-label="TechOn Home">
-                <span class="logo-mark">T</span>
-                <span class="logo-text">TechOn</span>
+
+    <div class="bg-glow"></div>
+    <div class="bg-glow-2"></div>
+
+    <!-- HEADER NAVIGATION -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <!-- Chèn logo có sẵn của dự án -->
+                <img src="images/logo-techon-final.png" alt="Techon Logo"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
             </a>
-
-            <nav class="main-nav" aria-label="Điều hướng chính">
-                <ul>
-                    <li><a href="#about">Giới thiệu</a></li>
-                    <li><a href="#solutions">Giải pháp</a></li>
-                    <li><a href="#benefits">Lợi ích</a></li>
-                    <li><a href="#contact">Liên hệ</a></li>
-                </ul>
-            </nav>
-
-            <a href="http://techon.com.vn/" target="_blank" class="btn btn-outline">Dùng thử demo</a>
+            <div class="nav-links">
+                <a href="#hero">Tầm nhìn</a>
+                <a href="#missions">Sứ mệnh</a>
+                <a href="#values">Giá trị cốt lõi</a>
+            </div>
+            <div class="nav-cta">
+                <a href="https://web.techon.com.vn/" target="_blank" class="btn btn-primary">Dùng thử ngay</a>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <main>
-        <section id="hero">
-            <div class="container hero-grid">
-                <div class="hero-content">
-                    <p class="eyebrow">CÔNG TY CỔ PHẦN CÔNG NGHỆ TECHON</p>
-                    <h1>Tăng tốc bán hàng với nền tảng quản lý thông minh</h1>
-                    <p>
-                        TechOn mang đến hệ sinh thái công nghệ giúp doanh nghiệp tối ưu toàn bộ quy trình
-                        từ bán hàng, theo dõi đơn hàng đến quản trị sản phẩm trên một nền tảng duy nhất.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#contact" class="btn btn-primary">Đăng ký tư vấn</a>
-                        <a href="#solutions" class="btn btn-ghost">Khám phá giải pháp</a>
-                    </div>
-                    <div class="hero-stats">
-                        <div>
-                            <strong>24/7</strong>
-                            <span>Hỗ trợ vận hành</span>
-                        </div>
-                        <div>
-                            <strong>01 nền tảng</strong>
-                            <span>Quản lý tập trung</span>
-                        </div>
-                        <div>
-                            <strong>Bảo mật cao</strong>
-                            <span>An toàn dữ liệu</span>
-                        </div>
-                    </div>
-                </div>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+        <div class="container hero-layout">
+            <div class="hero-content">
+                <span class="eyebrow">Dẫn đầu kỷ nguyên số</span>
+                <h1>Giải pháp quản lý, <br> <span class="text-gradient">Tạo giá trị thực</span></h1>
+                <p>Techon giúp doanh nghiệp vận hành bằng dữ liệu, không bằng cảm tính. Nền tảng CRM và phân tích AI
+                    tiên phong tại Việt Nam và Đông Nam Á.</p>
 
-                <div class="hero-card" aria-label="Bảng điều khiển minh họa">
-                    <h3>Bảng điều khiển TechOn</h3>
-                    <ul>
-                        <li><span>Đơn hàng mới</span><strong>128</strong></li>
-                        <li><span>Tỷ lệ xử lý đúng hạn</span><strong>98%</strong></li>
-                        <li><span>Sản phẩm đang bán</span><strong>1,245</strong></li>
-                        <li><span>Doanh thu hôm nay</span><strong>₫ 256M</strong></li>
-                    </ul>
+                <div class="hero-actions">
+                    <a href="#cta" class="btn btn-primary">Nhận Tư Vấn Demo</a>
+                    <a href="#missions" class="btn btn-outline">Tìm hiểu thêm</a>
                 </div>
             </div>
-        </section>
 
-        <section id="about" class="section">
-            <div class="container about">
-                <h2>Về TechOn</h2>
-                <p>
-                    TechOn là công ty cổ phần công nghệ tập trung phát triển các giải pháp giúp doanh nghiệp
-                    bán hàng nhanh hơn, quản lý vận hành hiệu quả hơn và mở rộng kinh doanh bền vững.
-                    Với tư duy sản phẩm linh hoạt, chúng tôi đồng hành cùng doanh nghiệp trong chuyển đổi số.
+            <div class="hero-visual">
+                <div class="floating-badge badge-1">
+                    <div class="badge-icon">✓</div>
+                    Tuyệt đối dữ liệu
+                </div>
+
+                <!-- Bảng UI giả lập -->
+                <div class="dashboard-mockup">
+                    <div class="db-header">
+                        <strong style="color:var(--text-heading)">Tổng quan vận hành</strong>
+                        <span style="font-size:12px; color:var(--text-muted)">Hôm nay, 12:00 PM</span>
+                    </div>
+                    <div class="db-metrics">
+                        <div class="db-card">
+                            <span>Khách hàng mới</span>
+                            <strong>+1,248 <span class="trend">↑ 14%</span></strong>
+                        </div>
+                        <div class="db-card">
+                            <span>Doanh thu kỳ vọng</span>
+                            <strong>₫3.4B <span class="trend">↑ 22%</span></strong>
+                        </div>
+                    </div>
+                    <div style="font-size:0.85rem; margin-bottom: 8px; font-weight: 500;">Tăng trưởng tỷ lệ chốt đơn (AI
+                        Phân tích)</div>
+                    <div class="db-chart">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+
+                <div class="floating-badge badge-2">
+                    <div class="badge-icon">⚡</div>
+                    Triển khai tốc độ
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SỨ MỆNH (MISSIONS) -->
+    <section id="missions" class="missions">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sứ Mệnh Techon</h2>
+                <p>Nền tảng CRM & AI dễ dàng triển khai, linh hoạt với chi phí tối ưu nhất để mang lại hiệu quả tức thì.
                 </p>
             </div>
-        </section>
 
-        <section id="solutions" class="section section-soft">
-            <div class="container">
-                <h2>Giải pháp cốt lõi</h2>
-                <div class="cards-grid">
-                    <article class="card">
-                        <h3>Giải pháp bán hàng</h3>
-                        <p>Tập trung dữ liệu khách hàng, quản lý kênh bán và theo dõi hiệu suất theo thời gian thực.</p>
-                    </article>
-                    <article class="card">
-                        <h3>Quản lý đơn hàng</h3>
-                        <p>Tự động hóa luồng xử lý đơn, cập nhật trạng thái chính xác và giảm thiểu sai sót vận hành.</p>
-                    </article>
-                    <article class="card">
-                        <h3>Quản lý sản phẩm</h3>
-                        <p>Chuẩn hóa danh mục, kiểm soát tồn kho và đồng bộ thông tin sản phẩm trên nhiều kênh.</p>
-                    </article>
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <div class="metric-icon">📈</div>
+                    <h3>Tăng trưởng Doanh thu</h3>
+                    <p>Quản trị vòng đời khách hàng chặt chẽ đa kênh, không bỏ sót bất kỳ cơ hội chốt đơn nào trong phễu
+                        lọc.</p>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-icon">⚙️</div>
+                    <h3>Tối ưu Vận hành</h3>
+                    <p>Giảm thiểu tối đa sự phụ thuộc vào yếu tố con người bằng tự động hóa quy trình nghiệp vụ hằng
+                        ngày.</p>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-icon">🧠</div>
+                    <h3>Quyết định bằng Dữ liệu</h3>
+                    <p>Chuẩn hóa bộ quy trình công ty, ban lãnh đạo ra quyết định hoàn toàn trên các báo cáo thời gian
+                        thực.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="benefits" class="section">
-            <div class="container">
-                <h2>Tại sao chọn TechOn?</h2>
-                <div class="benefits-grid">
-                    <div class="benefit-item">Triển khai nhanh, dễ tích hợp với hệ thống hiện có</div>
-                    <div class="benefit-item">Giao diện trực quan, phù hợp nhiều mô hình kinh doanh</div>
-                    <div class="benefit-item">Báo cáo minh bạch giúp ra quyết định chính xác</div>
-                    <div class="benefit-item">Đội ngũ chuyên gia công nghệ đồng hành dài hạn</div>
+    <!-- GIÁ TRỊ CỐT LÕI (CORE VALUES) -->
+    <section id="values" class="values">
+        <div class="container">
+            <div class="section-title">
+                <h2>Giá Trị Cốt Lõi</h2>
+                <p>Triết lý sản phẩm đồng hành cùng mọi dòng code của Techon</p>
+            </div>
+
+            <div class="bento-grid">
+                <div class="bento-card bento-1">
+                    <h3>1. Thực chiến</h3>
+                    <p>Tính năng phải giải quyết được vấn đề <b>thật</b> của doanh nghiệp. Đi thẳng vào nút thắt, chúng
+                        tôi không làm công nghệ cho đẹp hay chạy theo xu hướng nếu nó vô dụng.</p>
+                </div>
+                <div class="bento-card bento-2">
+                    <h3>2. Đơn giản hóa</h3>
+                    <p>Mục tiêu lớn nhất là biến những thứ siêu phức tạp trở nên dễ dàng nhất. Ứng dụng AI thông minh
+                        nhưng được tạo hình bằng một UI mà người không chuyên cũng có thể thao tác hoàn chỉnh.</p>
+                </div>
+                <div class="bento-card bento-3">
+                    <h3>3. Tốc độ</h3>
+                    <p>Trong thời đại số, kẻ chậm chân sẽ bị đào thải. Ở Techon, nền tảng triển khai cực nhanh, cải tiến
+                        thần tốc và phản hồi hỗ trợ bạn ngay lập tức.</p>
+                </div>
+                <div class="bento-card bento-4">
+                    <h3>4. Khách hàng là trung tâm</h3>
+                    <p>Sự thành công của bạn chính là thước đo của chúng tôi. Tại Techon, <b>"Chúng tôi không bán tính
+                            năng, chúng tôi bán giải pháp"</b>.</p>
+                </div>
+                <div class="bento-card bento-5">
+                    <h3>5. Dữ liệu là Tài sản</h3>
+                    <p>Không cảm tính, không ước chừng. Mọi quyết sách của công ty phải được xây dựng nền tảng từ những
+                        con số rõ ràng nhất.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact" class="section cta-section">
-            <div class="container cta-wrap">
-                <h2>Sẵn sàng chuyển đổi vận hành cùng TechOn?</h2>
-                <p>Để lại thông tin để nhận tư vấn giải pháp phù hợp với mô hình kinh doanh của bạn.</p>
-                <button id="cta-button" class="btn btn-primary">Nhận tư vấn ngay</button>
+    <!-- CALL TO ACTION LỚN -->
+    <section id="cta" class="final-cta">
+        <div class="container">
+            <div class="cta-box">
+                <div class="glow-red"></div>
+                <h2>Chuẩn hóa doanh nghiệp của bạn.</h2>
+                <p>Nền tảng CRM đồng hành cùng doanh nghiệp vươn tầm Đông Nam Á. Để lại yêu cầu, chuyên viên của chúng
+                    tôi sẽ gọi trực tiếp.</p>
+                <a href="mailto:contact@techon.vn" class="btn btn-primary"
+                    style="background: white; color: var(--primary);">Đăng Ký Tư Vấn Miễn Phí</a>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer class="main-footer">
-        <div class="container footer-wrap">
-            <p>© 2026 Công ty Cổ phần Công nghệ TechOn. All rights reserved.</p>
-            <a href="#hero">Lên đầu trang ↑</a>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>Trở thành đơn vị tiên phong tại Việt Nam và Đông Nam Á</p>
+            <p style="margin-top: 8px;"><strong>© 2026 Techon JSC. Nền tảng tạo giá trị thực.</strong></p>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
 </body>
+
 </html>
